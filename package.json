@@ -1,0 +1,57 @@
+{
+    "name": "filesync",
+    "displayName": "SNC File Sync Helper",
+    "description": "make running snc-filesync commands easier",
+    "version": "0.0.3",
+    "publisher": "stringy",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.searchRttms",
+        "onCommand:extension.watchRttms",
+        "onCommand:extension.firstRttms",
+        "onCommand:extension.syncRttms",
+        "onCommand:extension.SendToBucket"
+
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.searchRttms",
+            "title": "Rttms search"
+        },
+        {
+            "command": "extension.watchRttms",
+            "title": "Rttms watch"
+        },
+        {
+            "command": "extension.firstRttms",
+            "title": "Rttms setup"
+        },
+        {
+            "command": "extension.syncRttms",
+            "title": "Rttms sync"
+        },
+        {
+            "command": "extension.SendToBucket",
+            "title": "Rttms BitBucket"
+        }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "eslint": "^3.6.0",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
