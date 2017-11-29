@@ -10,15 +10,14 @@ This extension makes it easier for us to run the sn-filesync node tool.
 
 Nil
 
-## Extension Package
+## How to publish and install VSIX extension package
 
-proxy=http://rosydproxy:8080
-https-proxy=http://rosydproxy:8080
-strict-ssl=false
-registry=http://registry.npmjs.org/
+From the command line:
+`npm install -g vsce vsce package`
+[https://code.visualstudio.com/docs/extensions/publish-extension](https://code.visualstudio.com/docs/extensions/publish-extension)
 
-npm install -g vsce
-vsce package
+Now install the "local" .VSIX file (this method has changed over the last few years/months)
+[https://stackoverflow.com/questions/37071388/how-to-install-vscode-extensions-offline](https://stackoverflow.com/questions/37071388/how-to-install-vscode-extensions-offline)
 
 
 ## Extension Settings
